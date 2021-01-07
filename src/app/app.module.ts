@@ -5,10 +5,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FormularioComponent } from './components/formulario/formulario.component';
 
+import { from } from 'rxjs';
+
 @NgModule({
   declarations: [
     AppComponent,
-    FormularioComponent
+    FormularioComponent,
+   
   ],
   imports: [
     BrowserModule,
