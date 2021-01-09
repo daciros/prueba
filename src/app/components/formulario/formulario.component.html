@@ -4,24 +4,82 @@
 <body>
     <p>formulario works!</p>
     <div class="form">
-        <form [formGroup]="form">
+
+        <form>
             <div class="camp">
                 <p class="pos">
                     Name: <br/>
-                    <input class="text" type="text" formControlName="name">
+                    <input class="text" type="text" placeholder="name">
                 </p>
-                <p>
+
+                <p style="margin-top: 15px;">
                     Document: <br/>
-                    <input class="text-doc" type="text" formControlName="documento">
+                    <input class="text text-doc" type="text" placeholder="documento">
                 </p>
-                <p>
+
+                <p style="margin-top: 75px;">
                     <br/>
-                    <input type="hidden" formControlName="key">
+                    <input type="hidden" placeholder="key">
                 </p>
-                <button class="button" type="submit">Send</button>
+
+                <button style="margin-top: 0px;" class="button" type="submit">Send</button>
             </div>
 
 
         </form>
     </div>
 </body>
+
+
+
+
+
+
+
+
+<!--link type="javascript" rel="import" href="../../encriptar/forge.all.min.js">
+<link type="text/css" rel="stylesheet" href="./formulario.component.css">
+
+<body>
+    <p>formulario works!</p>
+    <div class="form">
+        <form [formGroup]="form" (ngSubmit)="save($event)">
+        <form>
+            <div class="camp">
+                <p class="pos" style="margin-top: 15px;">
+                    Name: <br/>
+                    <input class="text" type="text" formControlName="name">
+                </p>
+                <div *ngIf="textField.errors && textField.touched">
+                    <p *ngIf="textField.hasError('required')">
+                        Es un campo requerido
+                    </p>
+                    <p *ngIf="textField.hasError('maxlength')">
+                        Te pasaste, máximo deben haber 80 caracteres.
+                    </p>
+                </div>
+                <p style="margin-top: 75px;">
+                    Document: <br/>
+                    <input class="text text-doc" type="text" formControlName="documento">
+                </p>
+                <div *ngIf="textField.errors && textField.touched">
+                    <p *ngIf="textField.hasError('required')">
+                        Es un campo requerido
+                    </p>
+                    <p *ngIf="textField.hasError('maxlength')">
+                        Te pasaste, máximo deben haber 80 caracteres.
+                    </p>
+                </div>
+                <p>
+                    <br/>
+                    <input type="hidden" formControlName="key">
+                </p>
+                <button (click)="doSomething()">Action</button>
+                <button class="button" [disabled]="form.invalid" type="submit">Send</button>
+                <button class="button" type="submit">Send</button>
+            </div>
+
+
+        </form>
+    </div>
+</body-->

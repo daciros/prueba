@@ -16,15 +16,15 @@
     margin: 10px;
 }
 
-.text :read-only {
+.text {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: cornflowerblue;
-    border: 30px solid blue;
+    border: 1px solid blue;
 }
 
-.textdoc {
+.text-doc {
     text-overflow: ellipsis;
-    white-space: nowrap;
+    white-space: pre-line;
     text-transform: lowercase;
 }
 

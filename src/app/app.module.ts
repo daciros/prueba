@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { FormularioComponent } from './components/formulario/formulario.component';
 
 import { from } from 'rxjs';
+import { FormControl, FormGroup, FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,9 @@ import { from } from 'rxjs';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
