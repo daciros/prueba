@@ -1,0 +1,60 @@
+.form {
+    position: absolute;
+    height: 400px;
+    width: 300px;
+    background-color: rgb(17, 27, 175);
+    margin-top: 10%;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+.camp {
+    position: absolute;
+    width: 280px;
+    height: 380px;
+    background-color: cornsilk;
+    margin: 10px;
+}
+
+.text :read-only {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: cornflowerblue;
+    border: 30px solid blue;
+}
+
+.textdoc {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-transform: lowercase;
+}
+
+p {
+    color-interpolation-filters: auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    color: black;
+    margin-left: 17%;
+}
+
+input {
+    border-radius: 20px;
+}
+
+.pos {
+    margin-top: 20%;
+}
+
+.button {
+    text-align: center;
+    border-radius: 20px;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    touch-action: pinch-zoom;
+    margin: 20%;
+}
+
+body {
+    background-color: cornflowerblue;
+    height: 1000px;
+    width: 100%;
+}

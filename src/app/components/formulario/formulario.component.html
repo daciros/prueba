@@ -1,1 +1,27 @@
-<p>formulario works!</p>
+<link type="javascript" rel="import" href="../../encriptar/forge.all.min.js">
+<link type="text/css" rel="stylesheet" href="./formulario.component.css">
+
+<body>
+    <p>formulario works!</p>
+    <div class="form">
+        <form [formGroup]="form">
+            <div class="camp">
+                <p class="pos">
+                    Name: <br/>
+                    <input class="text" type="text" formControlName="name">
+                </p>
+                <p>
+                    Document: <br/>
+                    <input class="text-doc" type="text" formControlName="documento">
+                </p>
+                <p>
+                    <br/>
+                    <input type="hidden" formControlName="key">
+                </p>
+                <button class="button" type="submit">Send</button>
+            </div>
+
+
+        </form>
+    </div>
+</body>
